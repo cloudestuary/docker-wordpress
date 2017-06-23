@@ -1,7 +1,7 @@
 # docker-wordpress
 Wordpress docker image for CloudEstuary.com
 
-This image based on odiccial wordpress image but php-fpm by default.
+This image based on official wordpress image, but `php-fpm` by default.
 
 Plus it supprots `MAX_UPLOAD_FILE_SIZE` variable to adjust php configuration. 
 
