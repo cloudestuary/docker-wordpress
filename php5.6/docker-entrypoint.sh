@@ -25,7 +25,6 @@ file_env() {
 	unset "$fileVar"
 }
 
-if [[ "$1" == apache2* ]] || [ "$1" == php-fpm ]; then
 	if ! [ -e index.php -a -e wp-includes/version.php ]; then
 		echo >&2 "WordPress not found in $PWD - copying now..."
 		if [ "$(ls -A)" ]; then
@@ -216,7 +215,7 @@ EOPHP
 	for e in "${envs[@]}"; do
 		unset "$e"
 	done
-fi
+
 
 exec "$@"
 
